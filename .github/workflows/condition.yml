@@ -1,4 +1,4 @@
-name: condition-trigger
+name: condition-event-trigger
 on:
   issues:
     types:
