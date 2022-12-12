@@ -3,7 +3,7 @@ on:
   issues:
     types:
       - closed
-  push:
+  pull_request:
     types:
       - closed
 
@@ -16,6 +16,6 @@ jobs:
       run: |
         echo An issue was closed
     - name: if_pr
-      if: github.event.push
+      if: github.event.pull_request
       run: |
         echo A pull request was closed
